@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+.review {
+  margin-bottom: 20px;
+}
+
+.reviewer-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.reviewer-name {
+  font-weight: bold;
+}
+
+.reviewer-position {
+  color: #666;
+}
