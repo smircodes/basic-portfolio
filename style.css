@@ -1,3 +1,7 @@
+:root {
+  --border-style: 2px solid #000;
+}
+
 *,
 *::before,
 *::after {
@@ -8,6 +12,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 19px;
   /* background-color: #f1f1f1; */
   color: #333;
   line-height: 1.5;
@@ -15,7 +20,7 @@ body {
   padding: 0;
 }
 #container {
-  border: 2px solid #000;
+  border: var(--border-style);
   max-width: 1200px;
   margin: 15px auto;
 }
@@ -31,7 +36,7 @@ h6 {
 }
 
 a {
-  color: #333;
+  color: #000;
   text-decoration: none;
 }
 
@@ -52,7 +57,7 @@ header {
   background-color: #fff;
   padding: 10px 20px;
   text-align: center;
-  border-bottom: 2px solid #000;
+  border-bottom: var(--border-style);
 }
 #logo {
   display: flex;
@@ -85,7 +90,7 @@ nav ul.navbar-list li:not(:last-child) a::after {
   margin: 0 8px;
 }
 nav ul li {
-  font-size: 20px;
+  font-size: 22px;
 }
 nav a {
   text-decoration: none;
@@ -106,12 +111,11 @@ header h1 {
 }
 #slider h1 {
   font-family: "Indie Flower", cursive;
-  font-size: 48px;
+  font-size: 54px;
   color: #333;
 }
 #slider p {
   color: #868e96;
-  font-size: 19px;
 }
 /* 
 ========================================
@@ -123,43 +127,46 @@ main {
 #main_info {
   display: flex;
   justify-content: space-between;
+  border-bottom: var(--border-style);
 }
 
 #main_info section {
   flex: 1;
-  margin-bottom: 40px;
+  padding-bottom: 80px;
 }
 #main_info section:not(:last-child) {
-  border-right: 2px solid #000;
-}
-section {
-  margin-bottom: 40px;
+  border-right: var(--border-style);
 }
 
 section h2 {
   font-size: 20px;
   margin-bottom: 10px;
 }
-#projects ul li {
+#projects ul li:not(:last-child) {
   padding: 10px 20px;
-  border-bottom: 2px solid #000;
+  border-bottom: var(--border-style);
 }
 #projects ul li a {
-  font-size: 16px;
+  font-size: 19px;
+  font-weight: 500;
 }
 section h3,
 #reviews h3 {
-  font-family: "Indie Flower", cursive;
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 30px;
+  margin-bottom: 20px;
   color: #333;
+  font-weight: 600;
 }
-#experience .content_experience .roadmap,
-#experience .content_experience .opensource {
-  border-bottom: 2px solid #000;
+#experience .content_experience .roadmap {
+  border-bottom: var(--border-style);
+}
+#experience .content_experience > div {
   padding: 20px 18px 0;
 }
-
+.content_experience a {
+  color: #007bff;
+}
 #projects h3,
 #experience h3,
 #education h3 {
@@ -169,7 +176,12 @@ section h3,
 .content_experience .sub_title {
   font-family: "Indie Flower", cursive;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
+}
+
+#education ul li {
+  font-size: 19px;
+  padding: 0 18px;
 }
 
 /* 
@@ -191,10 +203,17 @@ section h3,
 
 .reviewer-name {
   font-weight: bold;
+  font-size: 18px;
 }
 
 .reviewer-position {
   color: #666;
+  font-size: 16px;
+}
+
+.review p {
+  font-size: 19px;
+  padding: 0 18px;
 }
 
 /*
@@ -204,4 +223,10 @@ Footer
 */
 #footer section {
   text-align: center;
+}
+footer {
+  padding: 20px 0;
+  margin-top: 40px;
+}
+#footer h3 {
 }
