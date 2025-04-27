@@ -150,10 +150,10 @@ section h2 {
 
 section h3,
 #reviews h3 {
-  font-family: "Shadows Into Light", cursive;
+  /* font-family: "Shadows Into Light", cursive; */
+  font-family: "Indie Flower", cursive;
   font-size: 30px;
   margin-bottom: 20px;
-  color: #333;
   font-weight: 600;
 }
 #experience .content_experience .roadmap {
@@ -263,6 +263,17 @@ Responsive
   .review_content .review {
     padding: 20px 15px;
   }
+  section h3,
+  #reviews h3 {
+    margin-bottom: 0;
+  }
+  #projects ul {
+    text-align: center;
+  }
+  #projects ul,
+  .content_experience {
+    background-color: #eceef0;
+  }
   #experience h3,
   #projects h3,
   #education h3 {
@@ -278,6 +289,13 @@ Responsive
   #experience .content_experience .opensource {
     padding-bottom: 18px;
   }
+  #education p,
+  #education span {
+    padding: 0 15px 5px;
+  }
+  #education ul {
+    padding: 15px 20px;
+  }
   #main_info {
     flex-direction: column;
   }
@@ -285,17 +303,27 @@ Responsive
     border-right: none;
   }
   #slider {
-    padding: 40px 0;
+    padding: 15px 0;
   }
   #slider h1 {
     font-size: 23px;
   }
+  #slider p {
+    font-size: 13px;
+  }
 
   section h3,
-  #reviews h3 {
+  #reviews h3,
+  .content_experience .sub_title,
+  .review p {
     font-size: 15px;
   }
+
+  .reviewer-info {
+    font-size: 16px;
+  }
   footer {
-    margin: 50px 0 25px;
+    margin: 5px 0 15px;
+    padding: 0;
   }
 }
