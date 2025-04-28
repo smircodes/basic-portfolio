@@ -8,5 +8,5 @@ https://smircodes.github.io/basic-portfolio/
 This is a basic responsive portfolio website built using only HTML and CSS as part of the Roadmap.sh Frontend Practice Projects.
 
 Reference Project:
-https://roadmap.sh/projects/basic-html-website
+https://roadmap.sh/projects/portfolio-website
 
