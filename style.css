@@ -13,11 +13,10 @@
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
   font-family: "Roboto", sans-serif;
   font-size: 19px;
   font-weight: 500;
+  color: var(--text-color);
   line-height: 1.5;
   margin: 0;
   padding: 0;
